@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sentence Generator</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+        >
+    </head>
+    <body>
+        <main class="container">
+            <h1>Sentence Generator</h1>
+            <p><form autocomplete="off">
+                <select name="type" aria-label="Set the type of sentence to generate" id="type-select">
+                    <option selected disabled value="">Set the type of sentence to generate</option>
+                </select>
+                <label>
+                    <input type="checkbox" name="agreement" id="agreement">
+                    I agree to the terms of the <a href="https://github.com/ErikMcClure/bad-licenses/blob/master/sltar">sltar license</a>
+                </label>
+            </form></p>
+            <p><button autocomplete="false" id="genButton">Generate</button></p>
+            <p><article id="sentence">
+                The brown dog jumped over the lazy fox
+            </article></p>
+            
+        </main>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
